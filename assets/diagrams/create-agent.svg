@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="472" viewBox="0 0 1000 472" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#78716c"/></marker>
+  <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2611c"/></marker>
+  <marker id="a-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a8a29e"/></marker>
+  <linearGradient id="moi-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7f0"/><stop offset="1" stop-color="#ffe9d9"/></linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="999" height="471" rx="18" fill="#ffffff" stroke="#e7e5e4"/>
+<line x1="132.0" y1="86" x2="132.0" y2="448" stroke="#e7e5e4" stroke-width="1.5" stroke-dasharray="4 5"/>
+<rect x="52.0" y="34" width="160.0" height="52" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="52.0" y="48" width="4" height="24" rx="2" fill="#44403c"/>
+<text x="132.0" y="65.0" text-anchor="middle" font-size="15" font-weight="600" fill="#1c1917">You</text>
+<line x1="316.0" y1="86" x2="316.0" y2="448" stroke="#e7e5e4" stroke-width="1.5" stroke-dasharray="4 5"/>
+<rect x="236.0" y="34" width="160.0" height="52" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="236.0" y="48" width="4" height="24" rx="2" fill="#a8541f"/>
+<text x="316.0" y="65.0" text-anchor="middle" font-size="15" font-weight="600" fill="#1c1917">Claude</text>
+<line x1="500.0" y1="86" x2="500.0" y2="448" stroke="#e7e5e4" stroke-width="1.5" stroke-dasharray="4 5"/>
+<rect x="420.0" y="34" width="160.0" height="52" rx="14" fill="url(#moi-g)" stroke="#f3c4a2"/>
+<text x="500.0" y="65.0" text-anchor="middle" font-size="15" font-weight="600" fill="#1c1917">MOI Authority Layer</text>
+<line x1="684.0" y1="86" x2="684.0" y2="448" stroke="#e7e5e4" stroke-width="1.5" stroke-dasharray="4 5"/>
+<rect x="604.0" y="34" width="160.0" height="52" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="604.0" y="48" width="4" height="24" rx="2" fill="#44403c"/>
+<text x="684.0" y="65.0" text-anchor="middle" font-size="15" font-weight="600" fill="#1c1917">MOI Wallet</text>
+<line x1="868.0" y1="86" x2="868.0" y2="448" stroke="#e7e5e4" stroke-width="1.5" stroke-dasharray="4 5"/>
+<rect x="788.0" y="34" width="160.0" height="52" rx="14" fill="url(#moi-g)" stroke="#f3c4a2"/>
+<text x="868.0" y="65.0" text-anchor="middle" font-size="15" font-weight="600" fill="#1c1917">MOI network</text>
+<path d="M136.0 120 L310.0 120" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="111.99999999999999" y="98" width="224.00000000000003" height="18" rx="5" fill="#ffffff"/>
+<text x="224.0" y="111" text-anchor="middle" font-size="12.5" fill="#1c1917">“Create an agent called Juno.”</text>
+<path d="M320.0 166 L494.0 166" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="359.0" y="144" width="98.00000000000001" height="18" rx="5" fill="#ffffff"/>
+<text x="408.0" y="157" text-anchor="middle" font-size="12.5" fill="#1c1917">create_agent</text>
+<path d="M504.0 212 L862.0 212" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="558.0" y="190" width="252.00000000000003" height="18" rx="5" fill="#ffffff"/>
+<text x="684.0" y="203" text-anchor="middle" font-size="12.5" fill="#1c1917">A new account, with Juno’s own key</text>
+<path d="M504.0 258 L678.0 258" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="504.5" y="236" width="175.00000000000003" height="18" rx="5" fill="#ffffff"/>
+<text x="592.0" y="249" text-anchor="middle" font-size="12.5" fill="#1c1917">Register Juno as yours?</text>
+<path d="M136.0 304 L678.0 304" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="376.5" y="282" width="63.00000000000001" height="18" rx="5" fill="#ffffff"/>
+<text x="408.0" y="295" text-anchor="middle" font-size="12.5" fill="#1c1917">Approve</text>
+<path d="M688.0 350 L862.0 350" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<rect x="671.0" y="328" width="210.00000000000003" height="18" rx="5" fill="#ffffff"/>
+<text x="776.0" y="341" text-anchor="middle" font-size="12.5" fill="#1c1917">RegisterAgent  ·  owner: you</text>
+<path d="M864.0 396 L322.0 396" fill="none" stroke="#a8a29e" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a-light)"/>
+<rect x="539.5" y="374" width="105.00000000000001" height="18" rx="5" fill="#ffffff"/>
+<text x="592.0" y="387" text-anchor="middle" font-size="12.5" fill="#78716c">Juno is yours</text>
+</svg>

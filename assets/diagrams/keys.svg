@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#78716c"/></marker>
+  <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2611c"/></marker>
+  <marker id="a-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a8a29e"/></marker>
+  <linearGradient id="moi-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7f0"/><stop offset="1" stop-color="#ffe9d9"/></linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="999" height="249" rx="18" fill="#ffffff" stroke="#e7e5e4"/>
+<clipPath id="card0"><rect x="30" y="30" width="220" height="190" rx="16"/></clipPath>
+<rect x="30" y="30" width="220" height="190" rx="16" fill="#ffffff"/>
+<rect x="30" y="30" width="220" height="5" fill="#44403c" clip-path="url(#card0)"/>
+<rect x="30" y="30" width="220" height="190" rx="16" fill="none" stroke="#e7e5e4"/>
+<g transform="translate(50,58)"><circle cx="8" cy="10" r="7" fill="none" stroke="#44403c" stroke-width="2.2"/><path d="M13 13 L24 24 M20 20 L23 17 M23 23 L26 20" stroke="#44403c" stroke-width="2.2" stroke-linecap="round" fill="none"/></g>
+<text x="86" y="76" text-anchor="start" font-size="15" font-weight="600" fill="#1c1917">Your key</text>
+<text x="50" y="112" text-anchor="start" font-size="12.5" font-weight="400" fill="#78716c">MOI Wallet, on your phone</text>
+<line x1="50" y1="126" x2="230" y2="126" stroke="#e7e5e4"/>
+<text x="50" y="148" text-anchor="start" font-size="10.5" font-weight="700" fill="#78716c">SIGNS</text>
+<text x="50" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Sign-in</text>
+<text x="50" y="188" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Permissions and revokes</text>
+<text x="50" y="206" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Agent registrations</text>
+<clipPath id="card1"><rect x="270" y="30" width="220" height="190" rx="16"/></clipPath>
+<rect x="270" y="30" width="220" height="190" rx="16" fill="#ffffff"/>
+<rect x="270" y="30" width="220" height="5" fill="#e2611c" clip-path="url(#card1)"/>
+<rect x="270" y="30" width="220" height="190" rx="16" fill="none" stroke="#e7e5e4"/>
+<g transform="translate(290,58)"><circle cx="8" cy="10" r="7" fill="none" stroke="#e2611c" stroke-width="2.2"/><path d="M13 13 L24 24 M20 20 L23 17 M23 23 L26 20" stroke="#e2611c" stroke-width="2.2" stroke-linecap="round" fill="none"/></g>
+<text x="326" y="76" text-anchor="start" font-size="15" font-weight="600" fill="#1c1917">Each agent&#x27;s key</text>
+<text x="290" y="112" text-anchor="start" font-size="12.5" font-weight="400" fill="#78716c">The agent wallet, encrypted</text>
+<line x1="290" y1="126" x2="470" y2="126" stroke="#e7e5e4"/>
+<text x="290" y="148" text-anchor="start" font-size="10.5" font-weight="700" fill="#78716c">SIGNS</text>
+<text x="290" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Orders</text>
+<text x="290" y="188" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Payments</text>
+<text x="290" y="206" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">As that agent only</text>
+<clipPath id="card2"><rect x="510" y="30" width="220" height="190" rx="16"/></clipPath>
+<rect x="510" y="30" width="220" height="190" rx="16" fill="#ffffff"/>
+<rect x="510" y="30" width="220" height="5" fill="#2f9e62" clip-path="url(#card2)"/>
+<rect x="510" y="30" width="220" height="190" rx="16" fill="none" stroke="#e7e5e4"/>
+<g transform="translate(530,58)"><circle cx="8" cy="10" r="7" fill="none" stroke="#2f9e62" stroke-width="2.2"/><path d="M13 13 L24 24 M20 20 L23 17 M23 23 L26 20" stroke="#2f9e62" stroke-width="2.2" stroke-linecap="round" fill="none"/></g>
+<text x="566" y="76" text-anchor="start" font-size="15" font-weight="600" fill="#1c1917">Orchard&#x27;s key</text>
+<text x="530" y="112" text-anchor="start" font-size="12.5" font-weight="400" fill="#78716c">Orchard&#x27;s service</text>
+<line x1="530" y1="126" x2="710" y2="126" stroke="#e7e5e4"/>
+<text x="530" y="148" text-anchor="start" font-size="10.5" font-weight="700" fill="#78716c">SIGNS</text>
+<text x="530" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Quotes</text>
+<text x="530" y="188" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Payment requests</text>
+<text x="530" y="206" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Charges</text>
+<clipPath id="card3"><rect x="750" y="30" width="220" height="190" rx="16"/></clipPath>
+<rect x="750" y="30" width="220" height="190" rx="16" fill="#ffffff"/>
+<rect x="750" y="30" width="220" height="5" fill="#3a26d6" clip-path="url(#card3)"/>
+<rect x="750" y="30" width="220" height="190" rx="16" fill="none" stroke="#e7e5e4"/>
+<g transform="translate(770,58)"><circle cx="8" cy="10" r="7" fill="none" stroke="#3a26d6" stroke-width="2.2"/><path d="M13 13 L24 24 M20 20 L23 17 M23 23 L26 20" stroke="#3a26d6" stroke-width="2.2" stroke-linecap="round" fill="none"/></g>
+<text x="806" y="76" text-anchor="start" font-size="15" font-weight="600" fill="#1c1917">Tessera&#x27;s key</text>
+<text x="770" y="112" text-anchor="start" font-size="12.5" font-weight="400" fill="#78716c">Tessera&#x27;s service</text>
+<line x1="770" y1="126" x2="950" y2="126" stroke="#e7e5e4"/>
+<text x="770" y="148" text-anchor="start" font-size="10.5" font-weight="700" fill="#78716c">SIGNS</text>
+<text x="770" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1c1917">Receipts</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#78716c"/></marker>
+  <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2611c"/></marker>
+  <marker id="a-light" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a8a29e"/></marker>
+  <linearGradient id="moi-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7f0"/><stop offset="1" stop-color="#ffe9d9"/></linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="999" height="429" rx="18" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="40" y="50" width="230" height="74" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="40" y="64" width="4" height="46" rx="2" fill="#44403c"/>
+<text x="155.0" y="84.0" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">You</text>
+<text x="155.0" y="103.0" text-anchor="middle" font-size="12.5" fill="#78716c">MOI Wallet on your phone</text>
+<rect x="730" y="50" width="230" height="74" rx="14" fill="url(#moi-g)" stroke="#f3c4a2"/>
+<text x="845.0" y="84.0" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">MOI</text>
+<text x="845.0" y="103.0" text-anchor="middle" font-size="12.5" fill="#78716c">Keeps your permission</text>
+<rect x="40" y="262" width="230" height="74" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="40" y="276" width="4" height="46" rx="2" fill="#e2611c"/>
+<text x="155.0" y="296.0" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">Your agent</text>
+<text x="155.0" y="315.0" text-anchor="middle" font-size="12.5" fill="#78716c">In Claude</text>
+<rect x="385" y="262" width="230" height="74" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="385" y="276" width="4" height="46" rx="2" fill="#2f9e62"/>
+<text x="500.0" y="296.0" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">Orchard</text>
+<text x="500.0" y="315.0" text-anchor="middle" font-size="12.5" fill="#78716c">A merchant</text>
+<rect x="730" y="262" width="230" height="74" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="730" y="276" width="4" height="46" rx="2" fill="#3a26d6"/>
+<text x="845.0" y="296.0" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">Tessera</text>
+<text x="845.0" y="315.0" text-anchor="middle" font-size="12.5" fill="#78716c">A payment gateway</text>
+<path d="M270 87 L726 87" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<circle cx="392" cy="87" r="11" fill="#e2611c"/>
+<text x="392" y="91.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">1</text>
+<rect x="427.5" y="76" width="165.0" height="22" rx="11" fill="#ffffff" stroke="#e7e5e4"/>
+<text x="510" y="91.3" text-anchor="middle" font-size="12.5" fill="#1c1917">You sign a permission</text>
+<path d="M155 124 L155 258" fill="none" stroke="#e2611c" stroke-width="2" stroke-linecap="round" marker-end="url(#a-orange)"/>
+<rect x="104.0" y="179" width="102.00000000000001" height="22" rx="11" fill="#ffffff" stroke="#e7e5e4"/>
+<text x="155" y="194.3" text-anchor="middle" font-size="12.5" fill="#1c1917">acts for you</text>
+<path d="M270 299 L381 299" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<circle cx="326" cy="270" r="11" fill="#e2611c"/>
+<text x="326" y="274.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">2</text>
+<text x="326" y="323" text-anchor="middle" font-size="12.5" font-weight="400" fill="#1c1917">Order</text>
+<path d="M615 299 L726 299" fill="none" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<circle cx="671" cy="270" r="11" fill="#e2611c"/>
+<text x="671" y="274.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">3</text>
+<text x="671" y="323" text-anchor="middle" font-size="12.5" font-weight="400" fill="#1c1917">Payment</text>
+<path d="M560 262 L790 128" fill="none" stroke="#e2611c" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#a-orange)"/>
+<rect x="630.0" y="189" width="60.00000000000001" height="22" rx="11" fill="#fff7f0" stroke="#f3c4a2"/>
+<text x="660" y="204.3" text-anchor="middle" font-size="12.5" fill="#e2611c">checks</text>
+<path d="M880 262 L880 128" fill="none" stroke="#e2611c" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#a-orange)"/>
+<rect x="850.0" y="184" width="60.00000000000001" height="22" rx="11" fill="#fff7f0" stroke="#f3c4a2"/>
+<text x="880" y="199.3" text-anchor="middle" font-size="12.5" fill="#e2611c">checks</text>
+<line x1="28" y1="392" x2="54" y2="392" stroke="#78716c" stroke-width="1.6" marker-end="url(#a-gray)"/>
+<text x="62" y="396" text-anchor="start" font-size="12" font-weight="400" fill="#78716c">Signed request</text>
+<line x1="182.08" y1="392" x2="208.08" y2="392" stroke="#e2611c" stroke-width="2"/>
+<text x="216.08" y="396" text-anchor="start" font-size="12" font-weight="400" fill="#78716c">Acts for you</text>
+<line x1="322.72" y1="392" x2="348.72" y2="392" stroke="#e2611c" stroke-width="1.6" stroke-dasharray="5 5"/>
+<text x="356.72" y="396" text-anchor="start" font-size="12" font-weight="400" fill="#78716c">Checks the permission on MOI</text>
+</svg>
