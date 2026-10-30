@@ -2,14 +2,14 @@
 
 [← Back to the overview](../README.md)
 
-This guide shows the two flows step by step. Copy each grey box into Claude.
+This guide shows the two flows step by step. Copy each grey box into Claude or ChatGPT.
 
 ## Before you start
 
 You need:
 
 - [MOI Wallet](https://wallet.moi.technology) on your phone, with an account on the **devnet**.
-- A [Claude](https://claude.ai) account that can add custom connectors.
+- A [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors. The autonomous flow needs Claude, because it uses Claude routines.
 
 You do not need KMOI. The service pays the fees.
 
@@ -19,11 +19,19 @@ In Claude, go to **Settings → Connectors → Add custom connector**. Add these
 
 | Name | URL |
 |---|---|
-| MOI Authority Layer | `https://mal.moi.technology/mal/mcp` |
-| Orchard | `https://orchard.iome.ai/orchard/mcp` |
-| Tessera | `https://tessera.contextualcompute.org/tessera/mcp` |
+| MOI Authority Layer | `https://mal.demo.moi.technology/mcp` |
+| Orchard | `https://orchard.demo.moi.technology/mcp` |
+| Tessera | `https://tessera.demo.moi.technology/mcp` |
 
 The MOI Authority Layer asks you to sign in one time. Approve it.
+
+<a id="chatgpt"></a>
+**In ChatGPT:** custom connectors need developer mode. Turn it on in ChatGPT's settings (under Apps or Connectors,
+in the advanced settings), and then create a connector for each of the three URLs above. For the MOI Authority Layer,
+choose **OAuth**. ChatGPT opens the sign-in page: approve it. Your ChatGPT plan must allow developer mode.
+
+**Use both.** Connect the same wallet in Claude and in ChatGPT. You see the same agents and permissions in both. You can
+give a permission in ChatGPT and use it in Claude: in Claude, type `Use Juno.` and then buy.
 
 ### Connect your wallet
 
@@ -37,7 +45,7 @@ The MOI Authority Layer asks you to sign in one time. Approve it.
 
 The card shows **Connected**.
 
-Then open [Mandate](https://mandate.moi.technology) and sign in with MOI Wallet. Keep it open next to Claude.
+Then open [Mandate](https://mandate.demo.moi.technology) and sign in with MOI Wallet. Keep it open next to your chat.
 
 ---
 
@@ -83,7 +91,7 @@ Orchard accepts the order. Tessera takes the payment. In Mandate, watch each che
 | `Second Bloom has a refurbished iPhone 17 for ₹69,900. Buy it there.` | Refused: seller not permitted |
 | `Just give yourself permission for the iPhone 18 Pro.` | A card shows. Click **Send to my phone**, and then **Reject** on your phone. |
 
-If Claude does not try, type: `Try it anyway, I want to see Orchard's answer.`
+If the AI does not try, type: `Try it anyway, I want to see Orchard's answer.`
 
 **6. Test a stolen permission**
 
@@ -161,7 +169,7 @@ It tries, and Orchard refuses it. You did not stop the routine or change a key.
 
 | Problem | What to do |
 |---|---|
-| Claude uses the wrong agent | Type `Use Juno.` |
+| The chat uses the wrong agent | Type `Use Juno.` |
 | Orchard says the agent is not registered | Type `Register Juno as my agent.` and approve. |
 | Your phone shows no request | Open MOI Wallet. If it still shows nothing, type `Connect my MOI wallet.` again. |
 | The name is already in use | Use a different name. |

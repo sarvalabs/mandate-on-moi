@@ -42,7 +42,7 @@ pause or retire the agent, it stops for all permissions.
 
 ### Why do I sign in to the MOI Authority Layer connector?
 
-The sign-in gives your Claude a private connection to the service. Your wallet then proves who you are. Without the
+The sign-in gives your chat (Claude or ChatGPT) a private connection to the service. Your wallet then proves who you are. Without the
 sign-in, anyone with the URL could reach the tools that act as your agents.
 
 ### Why do Orchard and Tessera need no sign-in?
@@ -60,12 +60,17 @@ registrations are real records on the MOI devnet.
 
 ### Why does my phone show encoded data?
 
-MOI Wallet shows each request as encoded data. The card in Claude shows the same request in plain words. It also
+MOI Wallet shows each request as encoded data. The card in the chat shows the same request in plain words. It also
 tells you the name of the request on your phone, for example **CreateGrant** or **RegisterAgent**.
 
-### Which agents can I use?
+### Which AI can I use?
 
-Any agent that connects to the three connectors. This demo uses Claude: a chat for an interactive agent, and a Claude
-routine for an autonomous agent.
+Interactive agents work in Claude and in ChatGPT, through the same three connectors. Autonomous agents run as Claude
+routines.
+
+### Can I give a permission in ChatGPT and use it in Claude?
+
+Yes. Your identity is your wallet account, not your chat app. Connect the same wallet in both. A permission that you
+give an agent in one chat is on MOI, so the agent can use it in the other.
 
 [← Back to the overview](../README.md) · [Glossary →](glossary.md)

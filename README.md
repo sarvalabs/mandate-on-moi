@@ -10,7 +10,7 @@ You sign exactly what an agent can do, on your phone.<br>
 Every company checks that permission on MOI before it acts.<br>
 One tap stops the agent everywhere.
 
-[**Open Mandate**](https://mandate.moi.technology) · [How it works](docs/how-it-works.md) · [Try it](docs/try-it.md) · [For developers](docs/developers.md) · [FAQ](docs/faq.md)
+[**Open Mandate**](https://mandate.demo.moi.technology) · [How it works](docs/how-it-works.md) · [Try it](docs/try-it.md) · [For developers](docs/developers.md) · [FAQ](docs/faq.md)
 
 </div>
 
@@ -59,7 +59,7 @@ refuses it.
 4. **Tessera checks MOI again**, independently, and then takes the payment.
 5. **You revoke** with one tap. Orchard and Tessera refuse the agent's next request.
 
-Orchard and Tessera do not trust each other, the agent, or Claude. Each one gets its answer from MOI.
+Orchard and Tessera do not trust each other, the agent, or the AI that runs it. Each one gets its answer from MOI.
 [Read the full explanation →](docs/how-it-works.md)
 
 ## What you see
@@ -79,39 +79,43 @@ Orchard and Tessera do not trust each other, the agent, or Claude. Each one gets
 
 | | Interactive agent | Autonomous agent |
 |---|---|---|
-| **Where it works** | In a chat with you, in Claude | Alone, as a Claude routine in the cloud |
+| **Where it works** | In a chat with you, in Claude or ChatGPT | Alone, as a Claude routine in the cloud |
 | **What starts it** | You ask it to buy something | A price change at Orchard for the product it watches |
 | **Example** | "Buy me the iPhone 17." | "Buy two pairs of AirPods Pro 3 when the price drops." |
 | **What controls it** | The permission you signed | The permission you signed |
 
 Both kinds of agent have their own identity and their own key. Neither kind can spend outside the permission.
 
+**One identity, any AI.** You are your wallet account, not your chat app. Connect the same wallet in Claude and in
+ChatGPT, and you see the same agents and the same permissions in both. For example, give Juno a permission in ChatGPT,
+and then let Juno buy in Claude.
+
 ## Try it in 5 steps
 
-You need [MOI Wallet](https://wallet.moi.technology) on your phone and a [Claude](https://claude.ai) account.
+You need [MOI Wallet](https://wallet.moi.technology) on your phone, and a [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors.
 
-1. **Add the three connectors** in Claude (Settings → Connectors → Add custom connector):
-   - `https://mal.moi.technology/mal/mcp`
-   - `https://orchard.iome.ai/orchard/mcp`
-   - `https://tessera.contextualcompute.org/tessera/mcp`
+1. **Add the three connectors** in Claude (Settings → Connectors → Add custom connector), or in ChatGPT ([see below](docs/try-it.md#chatgpt)):
+   - `https://mal.demo.moi.technology/mcp`
+   - `https://orchard.demo.moi.technology/mcp`
+   - `https://tessera.demo.moi.technology/mcp`
 2. **Connect your wallet.** In a new chat, type: `Connect my MOI wallet.` Scan the QR code with MOI Wallet.
 3. **Create an agent.** Type: `Create an agent called Juno.` Then choose **Interactive**. Approve on your phone.
 4. **Give it a permission.** Type: `Give Juno a permission: iPhone 17 from Orchard Official, up to ₹95,000 per order, for 15 minutes.` Approve on your phone.
-5. **Buy.** Type: `Buy me the iPhone 17.` Then open [Mandate](https://mandate.moi.technology) and watch each check.
+5. **Buy.** Type: `Buy me the iPhone 17.` Then open [Mandate](https://mandate.demo.moi.technology) and watch each check.
 
 [The full guide, with both flows →](docs/try-it.md)
 
 ## Live services
 
-| Service | What it is | Web | Claude connector (MCP) | API |
+| Service | What it is | Web | Connector (MCP) | API |
 |---|---|---|---|---|
-| **Mandate** | Your agents, your permissions, live activity, and revoke. Sign in with MOI Wallet. | [mandate.moi.technology](https://mandate.moi.technology) | | |
-| **MOI Authority Layer** | Creates your agents and sends your permissions to your phone. | | `https://mal.moi.technology/mal/mcp` | |
-| **Orchard** | A merchant that sells Apple products. It checks every agent order on MOI. | [orchard.iome.ai](https://orchard.iome.ai) | `https://orchard.iome.ai/orchard/mcp` | [Docs](https://orchard.iome.ai/orchard/api/v1/docs) |
-| **Tessera** | Orchard's payment gateway. It checks every payment on MOI again. | [tessera.contextualcompute.org](https://tessera.contextualcompute.org) | `https://tessera.contextualcompute.org/tessera/mcp` | [Docs](https://tessera.contextualcompute.org/tessera/api/v1/docs) |
+| **Mandate** | Your agents, your permissions, live activity, and revoke. Sign in with MOI Wallet. | [mandate.demo.moi.technology](https://mandate.demo.moi.technology) | | |
+| **MOI Authority Layer** | Creates your agents and sends your permissions to your phone. | | `https://mal.demo.moi.technology/mcp` | |
+| **Orchard** | A merchant that sells Apple products. It checks every agent order on MOI. | [orchard.demo.moi.technology](https://orchard.demo.moi.technology) | `https://orchard.demo.moi.technology/mcp` | [Docs](https://orchard.demo.moi.technology/api/v1/docs) |
+| **Tessera** | Orchard's payment gateway. It checks every payment on MOI again. | [tessera.demo.moi.technology](https://tessera.demo.moi.technology) | `https://tessera.demo.moi.technology/mcp` | [Docs](https://tessera.demo.moi.technology/api/v1/docs) |
 
-Add the three connectors in Claude: **Settings → Connectors → Add custom connector**. The MOI Authority Layer asks you
-to sign in one time.
+Add the three connectors in Claude (**Settings → Connectors → Add custom connector**) or in ChatGPT
+([how](docs/try-it.md#chatgpt)). The MOI Authority Layer asks you to sign in one time.
 
 Orchard and Tessera are independent companies in this demo. Their web apps (Merchant Center and Dashboard) are for
 their staff, and need a staff account. Their connectors and APIs are public.

@@ -117,7 +117,7 @@ Each signature is checked against the signer's key on MOI.
 
 ## The connectors (MCP)
 
-**MOI Authority Layer**: `https://mal.moi.technology/mal/mcp` (OAuth sign-in)
+**MOI Authority Layer**: `https://mal.demo.moi.technology/mcp` (OAuth sign-in)
 
 | For you | What it does |
 |---|---|
@@ -137,16 +137,16 @@ Each signature is checked against the signer's key on MOI.
 | `sign_order`, `sign_payment` | Signs an order or a payment with the agent's own key |
 | `report_run` | Ends a routine run with a report |
 
-**Orchard**: `https://orchard.iome.ai/orchard/mcp`: `search_products`, `get_quote`, `place_order`, `confirm_payment`
+**Orchard**: `https://orchard.demo.moi.technology/mcp`: `search_products`, `get_quote`, `place_order`, `confirm_payment`
 
-**Tessera**: `https://tessera.contextualcompute.org/tessera/mcp`: `spend_summary`, `get_receipt`
+**Tessera**: `https://tessera.demo.moi.technology/mcp`: `spend_summary`, `get_receipt`
 
 ## The APIs (REST)
 
 Orchard and Tessera also have REST APIs, with OpenAPI 3.1 references:
 
-- [Orchard API](https://orchard.iome.ai/orchard/api/v1/docs): products, listings, quotes, orders, payments
-- [Tessera API](https://tessera.contextualcompute.org/tessera/api/v1/docs): charges, receipts
+- [Orchard API](https://orchard.demo.moi.technology/api/v1/docs): products, listings, quotes, orders, payments
+- [Tessera API](https://tessera.demo.moi.technology/api/v1/docs): charges, receipts
 
 A refusal is a normal answer, not an HTTP error. It has a `code` and a `reason`.
 
