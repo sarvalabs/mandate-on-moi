@@ -130,6 +130,7 @@ Each signature is checked against the signer's key on MOI.
 | `start_agent`, `stop_agent`, `resume_agent` | Gives an autonomous agent its goal, and pauses or resumes it |
 | `retire_agent` | Revokes its permissions and marks it deprecated in the agent registry |
 | `my_permissions`, `history` | Your permissions and their records on MOI |
+| `pay_direct` | You pay an interactive agent's order yourself: your phone signs the payment |
 
 | For agents | What it does |
 |---|---|
@@ -139,14 +140,30 @@ Each signature is checked against the signer's key on MOI.
 
 **Orchard**: `https://orchard.demo.moi.technology/mcp`: `search_products`, `get_quote`, `place_order`, `confirm_payment`
 
-**Tessera**: `https://tessera.demo.moi.technology/mcp`: `spend_summary`, `get_receipt`
+**Tessera**: `https://tessera.demo.moi.technology/mcp`: `charge`, `pay`, `payment_status`, `spend_summary`, `get_receipt`
+
+Who signs a payment:
+
+- **Interactive agent:** the agent signs it (`sign_payment`), or you sign it yourself on your phone (`pay_direct`). When
+  you sign, you pay with your own key, so no agent permission is used. Tessera checks that you gave the permission
+  the order was placed under.
+- **Non-interactive agent:** the agent always signs its own payment.
+
+How the payment reaches Tessera:
+
+- **Through Orchard (usual):** the payment goes to Orchard's `confirm_payment`. Orchard calls Tessera's `charge` tool as
+  an MCP client, with the charge signed by Orchard's key.
+- **Directly:** if you ask, the payment goes to Tessera's `pay`. Tessera tells Orchard, and Orchard checks with Tessera
+  (`payment_status`) before it marks the order paid.
+
+Tessera checks every payment on MOI, whichever way it comes.
 
 ## The APIs (REST)
 
 Orchard and Tessera also have REST APIs, with OpenAPI 3.1 references:
 
 - [Orchard API](https://orchard.demo.moi.technology/api/v1/docs): products, listings, quotes, orders, payments
-- [Tessera API](https://tessera.demo.moi.technology/api/v1/docs): charges, receipts
+- [Tessera API](https://tessera.demo.moi.technology/api/v1/docs): charges, direct payments, payment status, receipts
 
 A refusal is a normal answer, not an HTTP error. It has a `code` and a `reason`.
 
