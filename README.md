@@ -118,7 +118,8 @@ Add the three connectors in Claude (**Settings → Connectors → Add custom con
 ([how](docs/try-it.md#chatgpt)). The MOI Authority Layer asks you to sign in one time.
 
 Orchard and Tessera are independent companies in this demo. Their web apps (Merchant Center and Dashboard) are for
-their staff, and need a staff account. Their connectors and APIs are public.
+their staff. In this demo, anyone can sign in to them with MOI Wallet: scan the QR code and approve the sign-in. Their
+connectors and APIs are public.
 
 ## What is real, and what is simulated
 
