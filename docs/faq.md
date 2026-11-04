@@ -45,6 +45,17 @@ pause or retire the agent, it stops for all permissions.
 The sign-in gives your chat (Claude or ChatGPT) a private connection to the service. Your wallet then proves who you are. Without the
 sign-in, anyone with the URL could reach the tools that act as your agents.
 
+### How do I disconnect my wallet?
+
+In a chat, type `Disconnect my wallet.` The service ends the connection to your phone and unlinks your account from the
+connector, for all your chats in that app. Nothing changes on MOI: your agents and permissions stay, and a live
+permission still works until you revoke it or it expires. To stop an agent, revoke its permission or pause it.
+
+While you are disconnected, your autonomous agents cannot run. A price change starts the routine, but the run is
+refused. Connect your wallet again to continue. You can also connect a different wallet.
+
+Mandate has its own sign-in. To sign out of Mandate, use **Sign out** in Mandate.
+
 ### Why do Orchard and Tessera need no sign-in?
 
 They keep nothing of yours. Each order and payment comes signed by the agent. They check everything on MOI.

@@ -47,6 +47,9 @@ The card shows **Connected**.
 
 Then open [Mandate](https://mandate.demo.moi.technology) and sign in with MOI Wallet. Keep it open next to your chat.
 
+To disconnect later, type `Disconnect my wallet.` Your agents and permissions stay on MOI. To use them again, connect
+your wallet again.
+
 ---
 
 ## Flow 1: An interactive agent

@@ -122,6 +122,7 @@ Each signature is checked against the signer's key on MOI.
 | For you | What it does |
 |---|---|
 | `connect_wallet`, `wait_for_wallet` | Connects MOI Wallet and proves your account |
+| `disconnect_wallet` | Ends the phone connection and unlinks your account from this connector. Your agents and permissions do not change |
 | `create_agent` | Creates an agent, and asks your phone to register it as yours |
 | `register_agent` | Registers an existing agent as yours |
 | `list_agents`, `use_agent` | Lists your agents, and selects the agent for this chat |
