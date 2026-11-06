@@ -11,7 +11,7 @@ This page explains the parts of Mandate, the keys, and what happens in each step
 | Part | What it does |
 |---|---|
 | **MOI Wallet** | Holds your key on your phone. It signs your sign-in, your permissions, your revokes, and your agent registrations. |
-| **MOI Authority Layer** | The Claude connector. It creates agents, keeps each agent's key, and sends each write to your phone to sign. |
+| **MOI Authority Layer** | The connector for Claude and ChatGPT. It creates agents, keeps each agent's key, and sends each write to your phone to sign. |
 | **Mandate** | The web app. It shows your agents, your permissions, and every check as it happens. You can revoke from it. |
 | **Orchard** | A merchant. It gives quotes, takes orders, and checks each order on MOI. |
 | **Tessera** | Orchard's payment gateway. It checks each payment on MOI again before it pays. |
@@ -92,11 +92,11 @@ Nothing else stops working.
 An example: an agent places an order. Orchard accepts it. You revoke. The agent then tries to pay. Tessera checks MOI
 and refuses the payment, because the permission is revoked.
 
-## Autonomous agents
+## Non-interactive agents
 
-An autonomous agent runs alone, as a Claude routine. A price change at Orchard starts it.
+A non-interactive agent runs alone, as a Claude routine. A price change at Orchard starts it.
 
-<p align="center"><img src="../assets/diagrams/autonomous.svg" alt="An autonomous run: a price change starts the agent's routine, which buys within its permission" width="100%"></p>
+<p align="center"><img src="../assets/diagrams/non-interactive.svg" alt="A non-interactive run: a price change starts the agent's routine, which buys within its permission" width="100%"></p>
 
 - You give the agent a goal in words, for example: "Buy two pairs of AirPods Pro 3 when the price drops."
 - Only a price change for that product starts the agent. A new listing at Orchard also starts it.

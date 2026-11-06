@@ -128,7 +128,7 @@ Each signature is checked against the signer's key on MOI.
 | `list_agents`, `use_agent` | Lists your agents, and selects the agent for this chat |
 | `create_grant`, `send_grant`, `check_approval` | Proposes a permission, sends it to your phone, and waits for your answer |
 | `revoke` | Revokes a permission |
-| `start_agent`, `stop_agent`, `resume_agent` | Gives an autonomous agent its goal, and pauses or resumes it |
+| `start_agent`, `stop_agent`, `resume_agent` | Gives a non-interactive agent its goal, and pauses or resumes it |
 | `retire_agent` | Revokes its permissions and marks it deprecated in the agent registry |
 | `my_permissions`, `history` | Your permissions and their records on MOI |
 | `pay_direct` | You pay an interactive agent's order yourself: your phone signs the payment |
@@ -173,14 +173,22 @@ A refusal is a normal answer, not an HTTP error. It has a `code` and a `reason`.
 | Code | Meaning |
 |---|---|
 | `NO_PERMISSION` | The agent has no permission |
+| `UNKNOWN_GRANT` | There is no such permission on MOI |
 | `GRANT_REVOKED`, `GRANT_EXPIRED` | You revoked the permission, or its time ended |
 | `NOT_THE_HOLDER` | The permission is for a different agent |
 | `AGENT_NOT_REGISTERED` | The owner did not register the agent in the agent registry |
 | `AGENT_NOT_ACTIVE` | The owner paused or retired the agent |
 | `OUT_OF_SCOPE` | The product, the seller, the amount, or the budget is outside the permission |
 | `BAD_SIGNATURE`, `WRONG_SIGNER` | A signature does not match the account |
+| `NOT_THE_GRANTOR` | Only the person who gave the permission can pay for the agent's order |
+| `BAD_QUOTE`, `WRONG_BUYER` | Orchard did not sign the quote, or the quote is for another agent |
 | `QUOTE_EXPIRED`, `REPLAY` | The quote is old, or the order or payment was used before |
+| `UNKNOWN_REQUEST`, `ALTERED_REQUEST` | Orchard did not ask for this payment, or the payment does not match what it asked for |
+| `BAD_REQUEST`, `REQUEST_EXPIRED` | The payment request is not the merchant's own, or it is old. Place the order again. |
+| `UNKNOWN_MERCHANT` | The charge or payment request is not from a merchant that Tessera serves |
+| `BAD_CHARGE`, `BAD_PAYMENT` | Tessera cannot read the signed charge or payment |
 | `MOI_UNREACHABLE` | MOI did not answer. Try again. |
+| `GATEWAY_UNREACHABLE` | Orchard could not reach Tessera. Try again. |
 
 ## The services
 
@@ -189,7 +197,7 @@ Mandate runs as five services. Only the gateway is public.
 | Service | Port | What it does |
 |---|---|---|
 | MOI Authority Layer | 8701 | The connector, the agents and their keys, the phone connection |
-| Mandate | 8700 | The web app, and the start of autonomous runs |
+| Mandate | 8700 | The web app, and the start of non-interactive runs |
 | Orchard | 8702 | The merchant: connector, API, and Merchant Center |
 | Tessera | 8703 | The payment gateway: connector, API, and Dashboard |
 | Gateway | 8704 | The one public port. It keeps the internal routes private. |

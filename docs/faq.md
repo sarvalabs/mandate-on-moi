@@ -51,7 +51,7 @@ In a chat, type `Disconnect my wallet.` The service ends the connection to your 
 connector, for all your chats in that app. Nothing changes on MOI: your agents and permissions stay, and a live
 permission still works until you revoke it or it expires. To stop an agent, revoke its permission or pause it.
 
-While you are disconnected, your autonomous agents cannot run. A price change starts the routine, but the run is
+While you are disconnected, your non-interactive agents cannot run. A price change starts the routine, but the run is
 refused. Connect your wallet again to continue. You can also connect a different wallet.
 
 Mandate has its own sign-in. To sign out of Mandate, use **Sign out** in Mandate.
@@ -76,7 +76,7 @@ tells you the name of the request on your phone, for example **CreateGrant** or 
 
 ### Which AI can I use?
 
-Interactive agents work in Claude and in ChatGPT, through the same three connectors. Autonomous agents run as Claude
+Interactive agents work in Claude and in ChatGPT, through the same three connectors. Non-interactive agents run as Claude
 routines.
 
 ### Can I give a permission in ChatGPT and use it in Claude?

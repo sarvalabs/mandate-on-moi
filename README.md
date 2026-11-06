@@ -67,7 +67,7 @@ Orchard and Tessera do not trust each other, the agent, or the AI that runs it. 
 <table>
 <tr>
 <td width="50%"><img src="assets/screenshots/mandate-interactive.png" alt="Mandate: your agents, the authority path and your permissions"><br><sub><b>Mandate</b>: your agents, your permissions, and every check, live.</sub></td>
-<td width="50%"><img src="assets/screenshots/mandate-autonomous.png" alt="Mandate: an autonomous agent and its setup steps"><br><sub><b>Mandate</b>: an autonomous agent, its goal, and its setup steps.</sub></td>
+<td width="50%"><img src="assets/screenshots/mandate-non-interactive.png" alt="Mandate: a non-interactive agent and its setup steps"><br><sub><b>Mandate</b>: a non-interactive agent, its goal, and its setup steps.</sub></td>
 </tr>
 <tr>
 <td width="50%"><img src="assets/screenshots/orchard-orders.png" alt="Orchard Merchant Center: every agent order and its decision"><br><sub><b>Orchard Merchant Center</b>: every agent order and the decision.</sub></td>
@@ -77,7 +77,7 @@ Orchard and Tessera do not trust each other, the agent, or the AI that runs it. 
 
 ## Two kinds of agent
 
-| | Interactive agent | Autonomous agent |
+| | Interactive agent | Non-interactive agent |
 |---|---|---|
 | **Where it works** | In a chat with you, in Claude or ChatGPT | Alone, as a Claude routine in the cloud |
 | **What starts it** | You ask it to buy something | A price change at Orchard for the product it watches |
@@ -101,7 +101,7 @@ You need [MOI Wallet](https://wallet.moi.technology) on your phone, and a [Claud
 2. **Connect your wallet.** In a new chat, type: `Connect my MOI wallet.` Scan the QR code with MOI Wallet.
 3. **Create an agent.** Type: `Create an agent called Juno.` Then choose **Interactive**. Approve on your phone.
 4. **Give it a permission.** Type: `Give Juno a permission: iPhone 17 from Orchard Official, up to ₹95,000 per order, for 15 minutes.` Approve on your phone.
-5. **Buy.** Type: `Buy me the iPhone 17.` Then open [Mandate](https://mandate.demo.moi.technology) and watch each check.
+5. **Buy.** Type: `Buy me the iPhone 17.` Then open [Mandate](https://mandate.demo.moi.technology) and watch the purchase on the map. Click **Replay** to see it again.
 
 [The full guide, with both flows →](docs/try-it.md)
 
@@ -154,7 +154,7 @@ Mandate uses [`js-mal-sdk`](https://github.com/sarvalabs/js-mal-sdk) for permiss
 ## More
 
 - [How it works](docs/how-it-works.md): the parts, the keys, a purchase step by step, and each check.
-- [Try it](docs/try-it.md): the interactive flow and the autonomous flow, step by step.
+- [Try it](docs/try-it.md): the interactive flow and the non-interactive flow, step by step.
 - [For developers](docs/developers.md): the connectors, the APIs, the signed data, and the SDKs.
 - [FAQ](docs/faq.md): common questions, with short answers.
 - [Glossary](docs/glossary.md): the words in these documents.

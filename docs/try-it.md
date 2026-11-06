@@ -9,7 +9,7 @@ This guide shows the two flows step by step. Copy each grey box into Claude or C
 You need:
 
 - [MOI Wallet](https://wallet.moi.technology) on your phone, with an account on the **devnet**.
-- A [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors. The autonomous flow needs Claude, because it uses Claude routines.
+- A [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors. The non-interactive flow needs Claude, because it uses Claude routines.
 
 You do not need KMOI. The service pays the fees.
 
@@ -82,7 +82,8 @@ Check the card. You can change each value. Click **Send to my phone**, and then 
 ```
 Buy me the iPhone 17.
 ```
-Orchard accepts the order. Tessera takes the payment. In Mandate, watch each check on the map.
+Orchard accepts the order. Tessera takes the payment. In Mandate, watch the purchase on the map. Click **Replay** on
+**Authority path** to play the newest purchase again. Click an order in **Agent activity** to see each check.
 
 **5. Test the limits** (one at a time)
 
@@ -96,10 +97,14 @@ Orchard accepts the order. Tessera takes the payment. In Mandate, watch each che
 
 If the AI does not try, type: `Try it anyway, I want to see Orchard's answer.`
 
-**6. Test a stolen permission**
+**6. Simulate an attack**
 
-In Mandate, select **Juno**. Click **Test a stolen permission**. A rogue agent copies Juno's permission and tries to
-buy. Orchard refuses it: the permission is only for Juno.
+In Mandate, select **Juno**. Click **Simulate an attack**, and then choose one test:
+
+| Test | Result |
+|---|---|
+| **Stolen permission** | A rogue agent copies Juno's permission and tries to buy. Orchard refuses it: the permission is only for Juno. |
+| **Spend over the limit** | The rogue agent tries to spend more than Juno's permission allows. Orchard refuses it. |
 
 **7. Revoke**
 ```
@@ -116,7 +121,7 @@ Tessera refuses the payment. Orchard accepted the order before, but Tessera chec
 
 ---
 
-## Flow 2: An autonomous agent
+## Flow 2: A non-interactive agent
 
 The agent runs alone, as your Claude routine. A price change at Orchard starts it.
 
@@ -127,10 +132,10 @@ The agent runs alone, as your Claude routine. A price change at Orchard starts i
    Create an agent called Falcon.
    ```
    ```
-   Autonomous
+   Non-interactive
    ```
    Approve on your phone.
-2. In Mandate, go to **Autonomous agents**. Select **Falcon**. Click **Connect routine**.
+2. In Mandate, go to the **Non-interactive** tab. Select **Falcon**. Click **Connect routine**.
 3. Follow the steps in the panel:
    1. Copy the prompt.
    2. On [claude.ai/code/routines](https://claude.ai/code/routines), create a new routine. Paste the prompt. Attach the three connectors only.
@@ -153,13 +158,20 @@ Click **Send to my phone**, and then approve.
 
 **3. Watch it**
 
-Orchard's prices change. Each change for AirPods Pro 3 starts a run. In Mandate, watch the strip under the map:
+Prices do not change on their own. You change them in
+[Orchard Merchant Center](https://orchard.demo.moi.technology):
 
-| Price change | Result |
+1. Sign in with MOI Wallet.
+2. In **Catalog**, select the AirPods Pro 3 listing from the seller in the table below.
+3. Enter the price, and then click **Publish price**.
+
+Each published price for AirPods Pro 3 starts a run. In Mandate, watch the strip under the map:
+
+| Publish this price | Result |
 |---|---|
-| Orchard Official, up to ₹27,900 | Refused: over the limit for each order |
-| Grey Harbour, down to ₹19,900 | Refused: seller not permitted |
-| Orchard Official, down to ₹22,900 | Paid. Falcon bought one of two. |
+| Orchard Official, ₹27,900 | Refused: over the limit for each order |
+| Grey Harbour, ₹19,900 | Refused: seller not permitted |
+| Orchard Official, ₹22,900 | Paid. Falcon bought one of two. |
 
 **4. Stop it**
 
@@ -176,6 +188,6 @@ It tries, and Orchard refuses it. You did not stop the routine or change a key.
 | Orchard says the agent is not registered | Type `Register Juno as my agent.` and approve. |
 | Your phone shows no request | Open MOI Wallet. If it still shows nothing, type `Connect my MOI wallet.` again. |
 | The name is already in use | Use a different name. |
-| Mandate does not update | Click ↺ at the top right. |
+| Mandate does not update | Reload the page. The ↺ button at the top right does not refresh: it clears the activity from this view. |
 
 [← Back to the overview](../README.md) · [For developers →](developers.md)
