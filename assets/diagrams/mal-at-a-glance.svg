@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#78716c"/></marker>
+  <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2611c"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="1199" height="459" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="40" y="60" width="220" height="72" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<rect x="41" y="74" width="4" height="44" rx="2" fill="#d6457a"/>
+<text x="150.0" y="87.0" font-size="14" font-weight="600" fill="#1c1917" text-anchor="middle" dominant-baseline="central">Grantor</text>
+<text x="150.0" y="107.0" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">a user or an organization</text>
+<rect x="40" y="270" width="220" height="72" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<rect x="41" y="284" width="4" height="44" rx="2" fill="#e2611c"/>
+<text x="150.0" y="297.0" font-size="14" font-weight="600" fill="#1c1917" text-anchor="middle" dominant-baseline="central">AI agent</text>
+<text x="150.0" y="317.0" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">the grantee: its own DID and key</text>
+<rect x="470" y="50" width="300" height="92" rx="12" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.4"/>
+<rect x="471" y="64" width="4" height="64" rx="2" fill="#7c5cd6"/>
+<text x="620" y="84" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle" dominant-baseline="central">MOI Authority Layer</text>
+<text x="620" y="108" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">keeps the signed grant on MOI</text>
+<rect x="470" y="258" width="300" height="96" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.4"/>
+<text x="620" y="294" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle" dominant-baseline="central">MAL Gateway</text>
+<text x="620" y="318" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">policy enforcement point</text>
+<rect x="940" y="264" width="220" height="84" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<rect x="941" y="278" width="4" height="56" rx="2" fill="#2f9e62"/>
+<text x="1050.0" y="297.0" font-size="14" font-weight="600" fill="#1c1917" text-anchor="middle" dominant-baseline="central">Resource server</text>
+<text x="1050.0" y="317.0" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">API or MCP server</text>
+<polyline points="260,96 470,96" fill="none" stroke="#78716c" stroke-width="1.4" marker-end="url(#a-gray)"/>
+<rect x="310.32" y="84" width="109.36000000000001" height="24" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<text x="365" y="96" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">signs a grant</text>
+<polyline points="260,306 470,306" fill="none" stroke="#e2611c" stroke-width="1.6" marker-end="url(#a-orange)"/>
+<rect x="300.24" y="294" width="129.52" height="24" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<text x="365" y="306" font-size="12" font-weight="400" fill="#e2611c" text-anchor="middle" dominant-baseline="central">each signed call</text>
+<polyline points="620,258 620,142" fill="none" stroke="#78716c" stroke-width="1.4" marker-end="url(#a-gray)"/>
+<rect x="548.52" y="188" width="142.96" height="24" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<text x="620" y="200" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">resolves the grant</text>
+<polyline points="770,306 940,306" fill="none" stroke="#e2611c" stroke-width="1.6" marker-end="url(#a-orange)"/>
+<rect x="820.48" y="294" width="69.04" height="24" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<text x="855" y="306" font-size="12" font-weight="400" fill="#e2611c" text-anchor="middle" dominant-baseline="central">allowed</text>
+<polyline points="620,354 620,396 150,396 150,342" fill="none" stroke="#78716c" stroke-width="1.4" stroke-dasharray="5 5" marker-end="url(#a-gray)"/>
+<rect x="286.64" y="384" width="196.72000000000003" height="24" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<text x="385" y="396" font-size="12" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">denied, with a reason code</text>
+<text x="600" y="436" font-size="13" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">The grantor can revoke the grant at any time. The gateway then denies the next call.</text>
+</svg>

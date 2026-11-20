@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400" viewBox="0 0 1400 400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#78716c"/></marker>
+  <marker id="a-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2611c"/></marker>
+  <marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b42318"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="1399" height="399" rx="14" fill="#ffffff" stroke="#e7e5e4"/>
+<rect x="34" y="34" width="172" height="196" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<circle cx="60" cy="60" r="13" fill="#e2611c"/>
+<text x="60" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="80" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Token</text>
+<text x="120.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">signature valid</text>
+<text x="120.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">not expired</text>
+<text x="120.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">nonce never seen</text>
+<text x="120.0" y="184" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">bound to this request</text>
+<polyline points="120.0,230 120.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="38" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="120.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">INVALID_SIGNATURE</text>
+<polyline points="206,132 226,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="226" y="34" width="172" height="196" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<circle cx="252" cy="60" r="13" fill="#e2611c"/>
+<text x="252" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">2</text>
+<text x="272" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Grant chain</text>
+<text x="312.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">ends at the grantor</text>
+<text x="312.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">every link live</text>
+<text x="312.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">each step narrower</text>
+<polyline points="312.0,230 312.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="230" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="312.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">GRANT_REVOKED</text>
+<polyline points="398,132 418,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="418" y="34" width="172" height="196" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<circle cx="444" cy="60" r="13" fill="#e2611c"/>
+<text x="444" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">3</text>
+<text x="464" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Scope</text>
+<text x="504.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">agent in workflow</text>
+<text x="504.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">tool in the grant</text>
+<text x="504.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">args match schema</text>
+<polyline points="504.0,230 504.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="422" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="504.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">RESOURCE_NOT_IN_GRANT</text>
+<polyline points="590,132 610,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="610" y="34" width="172" height="196" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<circle cx="636" cy="60" r="13" fill="#e2611c"/>
+<text x="636" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">4</text>
+<text x="656" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Policy</text>
+<text x="696.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">the tenant&#x27;s</text>
+<text x="696.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">Cedar policy</text>
+<text x="696.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">permits it</text>
+<polyline points="696.0,230 696.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="614" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="696.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">POLICY_DENIED</text>
+<polyline points="782,132 802,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="802" y="34" width="172" height="196" rx="12" fill="#fff7f0" stroke="#f6c9a8" stroke-width="1.2"/>
+<circle cx="828" cy="60" r="13" fill="#e2611c"/>
+<text x="828" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">5</text>
+<text x="848" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Credentials</text>
+<text x="888.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">service key or</text>
+<text x="888.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">OAuth token, from Vault</text>
+<text x="888.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">refreshed if expiring</text>
+<polyline points="888.0,230 888.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="806" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="888.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">NO_CREDENTIAL_FOUND</text>
+<polyline points="974,132 994,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="994" y="34" width="172" height="196" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<circle cx="1020" cy="60" r="13" fill="#e2611c"/>
+<text x="1020" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">6</text>
+<text x="1040" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Tool call</text>
+<text x="1080.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">MCP tools/call</text>
+<text x="1080.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">60 s time limit</text>
+<text x="1080.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">never retried</text>
+<polyline points="1080.0,230 1080.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="998" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="1080.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SERVICE_TIMEOUT</text>
+<polyline points="1166,132 1186,132" fill="none" stroke="#e2611c" stroke-width="1.4" marker-end="url(#a-orange)"/>
+<rect x="1186" y="34" width="172" height="196" rx="12" fill="#ffffff" stroke="#e7e5e4" stroke-width="1.2"/>
+<circle cx="1212" cy="60" r="13" fill="#e2611c"/>
+<text x="1212" y="60" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">7</text>
+<text x="1232" y="60" font-size="15" font-weight="700" fill="#1c1917" text-anchor="start" dominant-baseline="central">Audit</text>
+<text x="1272.0" y="106" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">hash-chained record</text>
+<text x="1272.0" y="132" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">written before</text>
+<text x="1272.0" y="158" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">the reply</text>
+<polyline points="1272.0,230 1272.0,262" fill="none" stroke="#b42318" stroke-width="1.2" marker-end="url(#a-red)"/>
+<rect x="1190" y="266" width="164" height="30" rx="8" fill="#fef3f2" stroke="#f4c7c3" stroke-width="1.2"/>
+<text x="1272.0" y="281" font-size="10.5" font-weight="600" fill="#b42318" text-anchor="middle" dominant-baseline="central" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">AUDIT_UNAVAILABLE</text>
+<rect x="34" y="322" width="1332" height="52" rx="10" fill="#fafaf9" stroke="#e7e5e4" stroke-width="1.2"/>
+<text x="700" y="340" font-size="13.5" font-weight="600" fill="#1c1917" text-anchor="middle" dominant-baseline="central">Every exit writes an audit record: DENY with the code, or ALLOW with the outcome.</text>
+<text x="700" y="360" font-size="12.5" font-weight="400" fill="#78716c" text-anchor="middle" dominant-baseline="central">Checks 1 to 5 run before any resource server is touched. A token with a bad signature costs no database read.</text>
+</svg>

@@ -5,21 +5,25 @@
 ### What is Mandate?
 
 Mandate is a web app and a set of services for AI agents. You give each agent a permission that you sign on your
-phone. Each company checks the permission on MOI before it acts.
+phone. Each service checks the permission on MOI before it acts.
 
 ### How is a permission different from an API key?
 
 An API key lets an agent do everything that the key can do. A permission lets an agent do only what you signed: the
-products, the sellers, the amounts, and the time. Each company checks the permission. You can revoke it with one tap.
+products, the sellers, the amounts, and the time. Each service checks the permission. You can revoke it with one tap.
 
 ### Where is my key?
 
-Your key is in MOI Wallet, on your phone. It never leaves your phone. No service can sign as you.
+Your key is in MOI Wallet, on your phone. It never leaves your phone, and no service can sign as you. It signs your sign-in, your permissions and revokes, your agents' registrations, and a payment when you choose to pay an order yourself.
 
 ### Where is the agent's key?
 
 Each agent has its own key. The agent wallet in the MOI Authority Layer keeps it, encrypted. The key never goes to
 Claude. The key signs only as that agent, never as you.
+
+### What is the MAL Gateway?
+
+The one place every agent call goes through. It checks the call against your grant and the tenant's own policy, adds the real service key from a vault, and records the decision. A tenant can use it in our cloud or run it in its own infrastructure. [More →](mal-gateway.md)
 
 ### What happens if someone tricks the agent?
 
@@ -37,7 +41,7 @@ agent from its next request.
 
 ### Can another person give a permission to my agent?
 
-Yes. The person who gives the permission decides its limits. You, as the owner, decide if your agent is active. If you
+Yes. The grantor, the user who gives the permission, decides its limits. You, as the owner, decide if your agent is active. If you
 pause or retire the agent, it stops for all permissions.
 
 ### Why do I sign in to the MOI Authority Layer connector?
@@ -84,4 +88,4 @@ routines.
 Yes. Your identity is your wallet account, not your chat app. Connect the same wallet in both. A permission that you
 give an agent in one chat is on MOI, so the agent can use it in the other.
 
-[← Back to the overview](../README.md) · [Glossary →](glossary.md)
+[← For developers](developers.md) · [Glossary →](glossary.md)

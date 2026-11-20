@@ -1,8 +1,8 @@
 # For developers
 
-[← Back to the overview](../README.md)
+[← Walkthrough](walkthrough.md) · [Overview](../README.md)
 
-This page lists the connectors, the APIs, the signed data, and the SDKs that Mandate uses.
+The connectors, the APIs, the signed data, and the SDKs behind Mandate. For how a call is enforced end to end, see [the MAL Gateway](mal-gateway.md).
 
 ## The stack
 
@@ -13,7 +13,7 @@ This page lists the connectors, the APIs, the signed data, and the SDKs that Man
 | Agent ownership | [`js-moi-agent-registry`](https://github.com/sarvalabs/js-moi-agent-registry) ([npm](https://www.npmjs.com/package/js-moi-agent-registry)): the agent registry |
 | MOI access | [`js-moi-sdk`](https://js-moi-sdk.docs.moi.technology) ([GitHub](https://github.com/sarvalabs/js-moi-sdk) · [npm](https://www.npmjs.com/package/js-moi-sdk)) |
 | Phone signing | MOI Wallet over WalletConnect: `moi.signInteraction` and `moi.sign` ([wallet docs](https://docs.wallet.moi.technology)) |
-| Agents | Claude, through MCP connectors ([Model Context Protocol](https://modelcontextprotocol.io)) |
+| Agents | Claude and ChatGPT, through MCP connectors ([Model Context Protocol](https://modelcontextprotocol.io)) |
 | Services | Node.js 22 and TypeScript |
 
 ### Install the SDKs
@@ -41,7 +41,7 @@ shows the agents in the agent registry.
 
 ## The check, in code
 
-Each company runs this check on its own, with its own connection to MOI:
+Each verifier runs this check on its own, with its own connection to MOI:
 
 ```ts
 import { AuthorityRegistry } from "js-mal-sdk";
@@ -61,8 +61,8 @@ if (profile.agent_wallet !== agentAccount || profile.status !== "ACTIVE") refuse
 if (outsideScope(authority.scope, order)) refuse("OUT_OF_SCOPE");
 ```
 
-The check does not compare the agent's owner with the person who gave the permission. Any person can give a
-permission to any agent. The person who gives the permission decides its limits. The agent's owner decides only if
+The check does not compare the agent's owner with the grantor. Any user can grant a
+permission to any agent. The grantor decides its limits. The agent's owner decides only if
 the agent is active.
 
 ## A permission on MOI
@@ -100,6 +100,8 @@ A permission is a **grant** in the authority registry. Your phone signs it. This
 }
 ```
 
+`max_total` is the budget for all orders together. If you don't give one, it is set to one order's worth (`max_amount`), so a permission without a total covers a single purchase.
+
 ## The signed data between the services
 
 <p align="center"><img src="../assets/diagrams/signed-data.svg" alt="The signed data: quote, order, payment request, payment, charge, and receipt" width="100%"></p>
@@ -108,8 +110,8 @@ A permission is a **grant** in the authority registry. Your phone signs it. This
 |---|---|---|
 | Quote | Orchard | Product, seller, price, quantity, the buyer agent, the expiry (5 minutes) |
 | Order | The agent | The quote, the permission ID, the agent's identity and registry ID, a nonce |
-| Payment request | Orchard | The order, the amount, the payee, the permission ID, the expiry |
-| Payment | The agent | The payment request, the agent's identity and registry ID |
+| Payment request | Orchard | The order, the amount, the payee, the permission ID, the expiry (10 minutes) |
+| Payment | The agent, or you | The payment request, the agent's identity and the permission ID. Signed by the agent, it also carries the agent's registry ID. Signed by you (`pay_direct`), it carries your identity as the payer. |
 | Charge | Orchard | The payment |
 | Receipt | Tessera | The amount, the payee, the payer, the agent |
 
@@ -180,7 +182,7 @@ A refusal is a normal answer, not an HTTP error. It has a `code` and a `reason`.
 | `AGENT_NOT_ACTIVE` | The owner paused or retired the agent |
 | `OUT_OF_SCOPE` | The product, the seller, the amount, or the budget is outside the permission |
 | `BAD_SIGNATURE`, `WRONG_SIGNER` | A signature does not match the account |
-| `NOT_THE_GRANTOR` | Only the person who gave the permission can pay for the agent's order |
+| `NOT_THE_GRANTOR` | Only the grantor can pay for the agent's order |
 | `BAD_QUOTE`, `WRONG_BUYER` | Orchard did not sign the quote, or the quote is for another agent |
 | `QUOTE_EXPIRED`, `REPLAY` | The quote is old, or the order or payment was used before |
 | `UNKNOWN_REQUEST`, `ALTERED_REQUEST` | Orchard did not ask for this payment, or the payment does not match what it asked for |
@@ -202,4 +204,4 @@ Mandate runs as five services. Only the gateway is public.
 | Tessera | 8703 | The payment gateway: connector, API, and Dashboard |
 | Gateway | 8704 | The one public port. It keeps the internal routes private. |
 
-[← Back to the overview](../README.md) · [FAQ →](faq.md)
+[← Walkthrough](walkthrough.md) · [FAQ →](faq.md)
