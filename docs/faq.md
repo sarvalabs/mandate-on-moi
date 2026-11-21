@@ -66,12 +66,12 @@ They keep nothing of yours. Each order and payment comes signed by the agent. Th
 
 ### Do I need KMOI?
 
-No. On the devnet, the service pays the network fees for you.
+No. On the public devnet, the service pays the network fees for you.
 
 ### Is the money real?
 
 No. The prices at Orchard are simulated, and Tessera keeps a ledger. The permissions, the revokes, and the agent
-registrations are real records on the MOI devnet.
+registrations are real records on the MOI public devnet.
 
 ### Why does my phone show encoded data?
 

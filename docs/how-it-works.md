@@ -127,9 +127,9 @@ A run is held to exactly the same checks as a chat. The model can be tempted by 
 
 ## Fees, and what is real
 
-You need no KMOI. On the devnet the service pays the network fees for your writes, and keeps enough in your account to back the storage your permissions use.
+You need no KMOI. On the public devnet the service pays the network fees for your writes, and keeps enough in your account to back the storage your permissions use.
 
-| Real, on the MOI devnet | Simulated |
+| Real, on the MOI public devnet | Simulated |
 |---|---|
 | Your permissions and every revoke | Orchard's prices |
 | Each agent's identity and its registration as yours | The money: Tessera keeps a ledger, and no value moves on chain |

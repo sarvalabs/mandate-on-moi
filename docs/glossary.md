@@ -34,7 +34,7 @@
 | **Run pass** | A pass that lets one routine run act as one agent, for 20 minutes. |
 | **Audit log** | The gateway's record of every decision, allowed or denied. Each entry is chained to the one before it, so a change is visible. |
 | **Scope** | The limits inside a permission. |
-| **Devnet** | The MOI development network. |
+| **Public devnet** | The public MOI development network. The demo runs on it. |
 | **KMOI** | The token that pays the network fees on MOI. |
 | **Voyage** | The explorer for MOI. |
 | **Agent Explorer** | The explorer for agents on MOI, and their owners. |

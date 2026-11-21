@@ -8,7 +8,7 @@ The connectors, the APIs, the signed data, and the SDKs behind Mandate. For how 
 
 | Layer | What Mandate uses |
 |---|---|
-| Network | The MOI devnet ([Voyage](https://voyage.moi.technology) shows its accounts and interactions; the [Agent Explorer](https://agents.moi.technology) shows its agents) |
+| Network | The MOI public devnet ([Voyage](https://voyage.moi.technology) shows its accounts and interactions; the [Agent Explorer](https://agents.moi.technology) shows its agents) |
 | Permissions | [`js-mal-sdk`](https://github.com/sarvalabs/js-mal-sdk) ([npm](https://www.npmjs.com/package/js-mal-sdk)): the MOI Authority Layer protocol |
 | Agent ownership | [`js-moi-agent-registry`](https://github.com/sarvalabs/js-moi-agent-registry) ([npm](https://www.npmjs.com/package/js-moi-agent-registry)): the agent registry |
 | MOI access | [`js-moi-sdk`](https://js-moi-sdk.docs.moi.technology) ([GitHub](https://github.com/sarvalabs/js-moi-sdk) · [npm](https://www.npmjs.com/package/js-moi-sdk)) |
@@ -28,7 +28,7 @@ npm install js-mal-sdk js-moi-agent-registry js-moi-sdk
 | `js-moi-agent-registry` | [sarvalabs/js-moi-agent-registry](https://github.com/sarvalabs/js-moi-agent-registry) | [js-moi-agent-registry](https://www.npmjs.com/package/js-moi-agent-registry) |
 | `js-moi-sdk` | [sarvalabs/js-moi-sdk](https://github.com/sarvalabs/js-moi-sdk) | [js-moi-sdk](https://www.npmjs.com/package/js-moi-sdk) |
 
-### Logics on the MOI devnet
+### Logics on the MOI public devnet
 
 | Logic | ID |
 |---|---|

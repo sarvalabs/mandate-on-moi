@@ -85,7 +85,7 @@ Mandate shows MAL with a real flow. An agent buys from a shop, Orchard, and pays
 
 Orchard and Tessera are two independent organizations. They do not trust each other, the agent or the AI model.
 
-| Real, on the MOI devnet | Simulated |
+| Real, on the MOI public devnet | Simulated |
 |---|---|
 | Your permissions and each revoke | The prices at Orchard |
 | The identity of each agent, and its registration to you ([Agent Explorer](https://agents.moi.technology)) | The money. Tessera keeps a ledger. No value moves on chain. |
@@ -93,9 +93,9 @@ Orchard and Tessera are two independent organizations. They do not trust each ot
 
 ## Try it
 
-You need [MOI Wallet](https://wallet.moi.technology) on your phone. You also need a [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors. You do not need KMOI. The service pays the fees.
+You need [MOI Wallet](https://wallet.moi.technology) on your phone, with a public devnet account. You also need a [Claude](https://claude.ai) or [ChatGPT](https://chatgpt.com) account that can add custom connectors. You do not need KMOI. The service pays the fees.
 
-1. **Add the three connectors.** In Claude, go to Settings → Connectors → Add custom connector. Add each URL:
+1. **Add the three connectors.** In Claude, go to Settings → Plugin → Browser Plugins → Add custom connector. Add each URL:
    `https://mal.demo.moi.technology/mcp`, `https://orchard.demo.moi.technology/mcp`, `https://tessera.demo.moi.technology/mcp`
 2. **Connect your wallet.** In a new chat, type `Connect my MOI wallet.` Then scan the QR code with MOI Wallet.
 3. **Make an agent.** Type `Create an agent called Juno.` Select **Interactive**. Then approve on your phone.
